@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>林新惇的個人履歷</title>
+    
+        <link rel="stylesheet" href="Resume-index.css">
+        <link rel="icon" href="Resume-pic/Thumbs up.ico">
+    
+    </head>
+<body>
+    
+    <div class="container bg-240">
+        <div class="split-left">
+            <img src="Resume-pic/PXL_20.jpg" alt="大頭照" class="myphoto">
+        </div>
+        <div class="split-right">
+            <div class="info-text info-text-1080-h">
+                <h2>Hello World , <br> 我是林新惇</h2>
+                <div class="email-btn">
+                    <button id="email" value="davidofnhc99@gmail.com" onclick="btncopy()" onmouseout="copycheck()" class="email"><img src="Resume-pic/envelope-regular.svg" class="icon">
+                        <span class="email-copy">複製至剪貼簿</span>
+                        寄信給我
+                    </button>
+                </div>
+                <a href="#"><img src="Resume-pic/globe-solid.svg" class="icon">GitHub</a>
+            </div>
+        </div>
+    </div>
+<!-- -------- -->
+    <div class="container">
+        <div class="split-left">
+            <div class="intro">
+                <h3>- 簡介</h3>
+                <p>
+                大學時曾修習過一學年的C++和Java，就此開啟對程式語言的興趣。後因在遊戲平台上買賣需求，自學過Python爬蟲；因公司需求，寫過Google Sheet的App Script，建立一個簡易的跨部門生產單系統；因工作需要，寫過批次檔，為十二台機台刪除容量過大而導致崩潰log檔。<br>
+                曾經把寫程式當作興趣，當作一個因讓生活更加便利而感到成就的小確信，相信著「當興趣變成工作，就不再有趣了」。可是現實太過殘酷，所以現在努力著能夠將興趣變成生活的一部分。
+                </p>
+            </div>
+        </div>
+        <div class="split-right">
+            <div class="intro">
+                <h3>- 基本資料</h3>
+                <dl>
+                    <dt>出生年月 : 1991年10月</dt>
+                    <dt>兵役狀況 : 役畢(2016年07月退伍)</dt>
+                    <dt>婚姻狀況 : 未婚</dt>
+                </dl>
+                <h3>- 教育程度</h3>
+                <p>國立中山大學-社會學系(畢業)</p>
+                <p>(2011/09-2015/06)</p>
+                <h3>- 程式語言</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>JavaScript</li>
+                    <li>C++</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- -------- -->
+    <div class="con-col">
+        <div class="intro">
+            <h3 style="text-align: center;">- 作品集</h3>
+        </div>
+        <div class="container ctr-h">
+            <div class="split-left">
+                <div class="modal-pic">
+                    <div class="pre-left" onclick="prePic()">
+                        <p>&#8249;</p>
+                    </div>
+                    <img src="Resume-pic/st-1.jfif" id="changPic">
+                    <div class="next-right" onclick="nextPic()">
+                        <p>&#8250;</p>
+                    </div>
+                    <div class="pic-page">1/4</div>
+                </div>
+            </div>
+            <div class="split-right">
+                <div class="output-text">
+                    <div class="item" id="output-text-1" style="display: block;">
+                        <h3>- 個人履歷網頁<span class="output-murmur">其實就是本頁</span></h3>
+                        <ul>
+                            <li>完全純手刻HTML+CSS+JavaScript，絕對沒有模組網站的味道</li>
+                            <li>響應式網頁 : 坐著看、躺著看，都可以</li>
+                        </ul>
+                    </div>
+                    <div class="item" id="output-text-2" style="display: none;">
+                        <h3>- 紙本式履歷網頁 <span class="output-murmur">用Word寫履歷?NO!用VSCode寫履歷!</span></h3>
+                        <ul>
+                            <li>完全純手刻HTML+CSS+JavaScript，讓履歷自由修改無極限</li>
+                            <li>響應式網頁 : 坐著看、躺著看，都可以</li>
+                        </ul>
+                    </div>
+                    <div class="item" id="output-text-3" style="display: none;">
+                        <h3>- 訂房網首頁<span class="output-murmur">產圖中，待補圖後上架</span></h3>
+                        <ul>
+                            <li>部分手刻HTML+CSS+JavaScript</li>
+                            <li>Bootstrap的滿滿模組味</li>
+                            <li>響應式網頁</li>
+                        </ul>
+                    </div>
+                    <div class="item" id="output-text-4" style="display: none;">
+                        <h3>- 發想中，敬請期待<span class="output-murmur">好東西需要時間的醞釀</span></h3>
+                    </div>
+                    <div class="next-right next-1080" onclick="nextPic()">
+                        <p>&#8250;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------- -->
+    <div class="con-col bg-240">
+        <div class="intro">
+            <h3 style="text-align: center;">- 工作經歷</h3>
+        </div>
+        <div class="container" style="position: relative;">
+            <div class="split-left job-lr" style="height: 95%;">
+                <div class="job-exp">
+                    <div class="job-title" onclick="jobpop(0)">
+                        <h3> <img src="Resume-pic/open-book.png" class="job-icon"> 全職考生(2023/04-2024/01) <img src="Resume-pic/click.png" class="job-icon"></h3>
+                    </div>
+                    <div class="job-content">
+                    <dl>
+                        <dt>工作地點 : 高雄市鳳山區</dt>
+                        <dt>工作內容 : <br>
+                            全職國考生</dt>
+                    </dl>
+                    </div>
+                </div>
+                <div class="job-exp">
+                    <div class="job-title" onclick="jobpop(1)">
+                        <h3> <img src="Resume-pic/paper.png" class="job-icon">行政人員(2022/09-2023/04) <img src="Resume-pic/click.png" class="job-icon"></h3>
+                    </div>
+                    <div class="job-content">
+                    <dl>
+                        <dt>工作地點 : 高雄市鳳山區</dt>
+                        <dt>工作內容 : <br>
+                            此職務工作內容包含但不限於 :<br>
+                            一、社團法人申請：<br>
+                            1.社團法人法院登記<br>
+                            2.社團法人內部部登記<br>
+                            3.社團法人國稅局財產申報<br>
+                            二、高雄市地方型SBIR計畫申請及執行 :<br>
+                            1.SBIR計畫書撰寫<br>
+                            2.SBIR計畫申請<br>
+                            3.SBIR計畫協助廠商接洽<br>
+                            4.SBIR計畫期中審查資料撰寫<br>
+                            三、活動辦理：<br>
+                            1.公司內部節慶活動辦理<br>
+                            四、文具及生產採購：<br>
+                            1.員工文具採購及憑證核銷<br>
+                            2.公司耗品採購及憑證核銷<br>
+                            3.生產部需品採購及憑證核銷<br>
+                            五、雜項：<br>
+                            1.器材維修<br>
+                            2.與設計部協作將地下一樓停車空間改作為展演空間<br>
+                            3.支援營運部門人力<br>
+                            4.支援倉儲部門送貨</dt>
+                    </dl>
+                    </div>
+                </div>
+                <div class="job-exp">
+                    <div class="job-title" onclick="jobpop(2)">
+                        <h3> <img src="Resume-pic/open-book.png" class="job-icon">兼職考生(2019/05-2022/09) <img src="Resume-pic/click.png" class="job-icon"></h3>
+                    </div>
+                    <div class="job-content">
+                    <dl>
+                        <dt>工作地點 : 高雄市鳳山區</dt>
+                        <dt>工作內容 : <br>
+                            兼職國考生與兼職打工</dt>
+                    </dl>
+                    </div>
+                </div>
+                <div class="job-exp">
+                    <div class="job-title" onclick="jobpop(3)">
+                        <h3> <img src="Resume-pic/research.png" class="job-icon">研究專員(2018/11-2019/04) <img src="Resume-pic/click.png" class="job-icon"></h3>
+                    </div>
+                    <div class="job-content">
+                    <dl>
+                        <dt>工作地點 : 高雄市苓雅區</dt>
+                        <dt>工作內容 : <br>
+                            此職務為政府專案之研究人員，工作內容包含：<br>
+                            一、例行工作：<br>
+                            1.尋找場地、洽詢租借事宜<br>
+                            2.聯繫其他單位人員之出席意願<br>
+                            3.禮品採購<br>
+                            4.場地布置<br>
+                            5.田野問卷調查<br>
+                            6.出席人員薪資核銷<br>
+                            二、單次工作：<br>
+                            1.統計分析、論文撰寫<br>
+                            2.研究成果PPT製作與演說<br>
+                            3.微電影拍攝公開招標</dt>
+                    </dl>
+                    </div>
+                </div>
+                <div class="job-exp">
+                    <div class="job-title" onclick="jobpop(4)">
+                        <h3> <img src="Resume-pic/paper.png" class="job-icon">總務人員(2017/02-2018/06) <img src="Resume-pic/click.png" class="job-icon"></h3>
+                    </div>
+                    <div class="job-content">
+                    <dl>
+                        <dt>工作地點 : 高雄市三民區</dt>
+                        <dt>工作內容 : <br>
+                            此公司為新創公司。管理部門含我在內共兩人，故承辦事項較多元：<br>
+                            一、資產管理 :<br>
+                            1.公司資產管理與造冊<br>
+                            2.公務車之派車與保養管理<br>
+                            3.庫存商品進出貨製表與統計<br>
+                            二、人事 :<br>
+                            1.員工勞健保加退保<br>
+                            2.每月員工差勤計算與製表<br>
+                            3.外勤員工車禍之慰問與保險接洽<br>
+                            4.承辦員工旅遊與尾牙<br>
+                            三、採購 :<br>
+                            1.對外營業分店之資產之採購<br>
+                            2.對外營業分店之固定耗材每月清點與叫貨<br>
+                            四、其他主管交辦事項 :<br>
+                            1.對外營業分店之POS機廠商接洽與教育訓練<br>
+                            2.實體刷卡機與線上金流系統之接洽<br>
+                            3.每月主管會議之會議紀錄與甘特圖製作<br>
+                            4.例行消防安檢廠商接洽</dt>
+                    </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="split-right job-lr" style="height: 95%;">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 XiN | 圖片素材取自於Bing Image Creator</p>
+    </footer>
+
+    <script src="Resume-index.js"></script>
+
+</body>
+</html>
