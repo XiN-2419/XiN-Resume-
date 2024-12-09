@@ -12,30 +12,32 @@ function copycheck() {
 //增加頁數時，單一func會有6處需修改
 function nextPic(){
     let page = document.querySelector("#changPic").getAttribute("src");
-    if(parseInt(page[7]) < 4){
-        document.getElementById("changPic").src = "pic/st-" + (parseInt(page[7])+1) + ".jfif";
-        document.querySelector(".pic-page").textContent = parseInt(page[7])+1 + "/4";
-        document.getElementById("output-text-"+page[7]).style.display = "none";
-        document.getElementById("output-text-"+(parseInt(page[7])+1)).style.display = "block";
-    } else if(parseInt(page[7]) == 4){
-        document.getElementById("changPic").src = "pic/st-" + (parseInt(page[7])-3) + ".jfif";
-        document.querySelector(".pic-page").textContent = parseInt(page[7])-3 + "/4";
-        document.getElementById("output-text-"+page[7]).style.display = "none";
-        document.getElementById("output-text-"+(parseInt(page[7])-3)).style.display = "block";
+    console.log(page);
+    console.log(page[14]);
+    if(parseInt(page[14]) < 4){
+        document.getElementById("changPic").src = "Resume-pic/st-" + (parseInt(page[14])+1) + ".jfif";
+        document.querySelector(".pic-page").textContent = parseInt(page[14])+1 + "/4";
+        document.getElementById("output-text-"+page[14]).style.display = "none";
+        document.getElementById("output-text-"+(parseInt(page[14])+1)).style.display = "block";
+    } else if(parseInt(page[14]) == 4){
+        document.getElementById("changPic").src = "Resume-pic/st-" + (parseInt(page[14])-3) + ".jfif";
+        document.querySelector(".pic-page").textContent = parseInt(page[14])-3 + "/4";
+        document.getElementById("output-text-"+page[14]).style.display = "none";
+        document.getElementById("output-text-"+(parseInt(page[14])-3)).style.display = "block";
     }
   }
   function prePic(){
     let page = document.querySelector("#changPic").getAttribute("src");
-    if(parseInt(page[7]) > 1){
-        document.getElementById("changPic").src = "pic/st-" + (parseInt(page[7])-1) + ".jfif";
-        document.querySelector(".pic-page").textContent = parseInt(page[7])-1 + "/4";
-        document.getElementById("output-text-"+page[7]).style.display = "none";
-        document.getElementById("output-text-"+(parseInt(page[7])-1)).style.display = "block";
-    } else if(parseInt(page[7]) == 1){
-        document.getElementById("changPic").src = "pic/st-" + (parseInt(page[7])+3) + ".jfif";
-        document.querySelector(".pic-page").textContent = parseInt(page[7])+3 + "/4";
-        document.getElementById("output-text-"+page[7]).style.display = "none";
-        document.getElementById("output-text-"+(parseInt(page[7])+3)).style.display = "block";
+    if(parseInt(page[14]) > 1){
+        document.getElementById("changPic").src = "Resume-pic/st-" + (parseInt(page[14])-1) + ".jfif";
+        document.querySelector(".pic-page").textContent = parseInt(page[14])-1 + "/4";
+        document.getElementById("output-text-"+page[14]).style.display = "none";
+        document.getElementById("output-text-"+(parseInt(page[14])-1)).style.display = "block";
+    } else if(parseInt(page[14]) == 1){
+        document.getElementById("changPic").src = "Resume-pic/st-" + (parseInt(page[14])+3) + ".jfif";
+        document.querySelector(".pic-page").textContent = parseInt(page[14])+3 + "/4";
+        document.getElementById("output-text-"+page[14]).style.display = "none";
+        document.getElementById("output-text-"+(parseInt(page[14])+3)).style.display = "block";
     }
   }
 
